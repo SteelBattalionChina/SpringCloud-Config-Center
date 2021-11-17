@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: user-consumer
+    name: test-user-consumer
   boot:
     admin:
       client:
