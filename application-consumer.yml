@@ -1,6 +1,6 @@
 server:
   port: 90
-
+myconfig: what-is-you-name
 spring:
   application:
     name: test-user-consumer
