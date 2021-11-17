@@ -1,6 +1,7 @@
 server:
   port: 90
-myconfig: what-is-you-name
+myconfig: what
+macing: 9527
 spring:
   application:
     name: test-user-consumer
