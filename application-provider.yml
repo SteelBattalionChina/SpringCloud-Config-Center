@@ -1,0 +1,35 @@
+server:
+  port: 90
+
+spring:
+  application:
+    name: user-consumer
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://euk1.com:7001/eureka
+#  instance:
+#    hostname: localhost
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "localhost"
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
